@@ -47,7 +47,7 @@ class MainScreenState extends State<MainScreen>
   Future<void> _pickImage() async
   {
     final ImagePicker picker = ImagePicker();
-    XFile? file = await picker.pickImage(source: ImageSource.gallery);
+    XFile? file = await picker.pickImage(source: ImageSource.camera);
     setState(() {
       if (file != null) _myImage = file;
     });
